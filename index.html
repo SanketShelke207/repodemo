@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Static Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .navbar {
+            background: #232f3e;
+            padding: 1rem 2rem;
+        }
+
+        .navbar-brand {
+            color: #ff9900;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+        }
+
+        .welcome {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .welcome h1 {
+            color: #232f3e;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+
+        .welcome p {
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        .aws-logo {
+            color: #ff9900;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">AWS Static Site</div>
+    </nav>
+
+    <div class="content">
+        <div class="welcome">
+            <h1>Welcome to <span class="aws-logo">AWS</span> Static Website</h1>
+            <p>Deployed using CI/CD Pipeline</p>
+        </div>
+    </div>
+</body>
+</html>
